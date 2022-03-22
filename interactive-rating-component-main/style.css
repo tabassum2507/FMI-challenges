@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Overpass", sans-serif;
+}
+
+:root {
+  background-color: #121417;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Overpass", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 450px;
+  background-color: #1f2630;
+  padding: 35px;
+  border-radius: 35px;
+}
+
+.card__star {
+  border-radius: 50%;
+  background-color: #252d37;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card h4 {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #959eac;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.25rem;
+  line-height: 26px;
+}
+
+.card__rating--div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.card__rating {
+  border-radius: 50%;
+  background-color: #252d37;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.card__rating:hover {
+  background-color: gainsboro;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card__rating.active {
+  background-color: #fb7413;
+}
+
+.card__button {
+  background-color: #fb7413;
+  height: 2.7rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card__button:hover {
+    background-color: aliceblue;
+    color: #fb7413;
+    cursor: pointer;
+}
+
+.clicked {
+    background: hsl(25, 97%, 53%);
+    color: white;
+}
+
+[hidden] { display: none !important; }
+
+.card__thankyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.5rem;
+  background-color: #1f2630;
+  height: 28rem;
+  width: 28rem;
+  padding: 2rem;
+
+}
+
+.card__thankyou img {
+  margin: 3rem;
+}
+
+.card_thankyou__p {
+  background-color: #252d37;
+  border-radius: 20px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card__thankyou--text {
+    color: #fb7413;
+}
+
+.card__thankyou--rating {
+    color: #fb7413;
+}
+
+.card__thankyou h2 {
+  font-size: 29px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.card__thankyou__text {
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7E9EA0;
+  margin-bottom: 2rem;
+}
+
