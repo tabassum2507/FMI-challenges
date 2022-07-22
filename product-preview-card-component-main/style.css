@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  background-color: hsl(30, 38%, 92%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  width: 45rem;
+  border-radius: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+section > img {
+  width: 48%;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.card {
+  padding: 2.75rem;
+}
+
+.preview {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+  padding-top: 2.5rem;
+}
+
+p {
+  padding-top: 2.7rem;
+  line-height: 1.3rem;
+}
+
+.card-rates {
+  padding: 2rem 0 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-sale-rate {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 1.9rem;
+  margin-right: 20px;
+}
+
+.card-original-rate {
+  text-decoration: line-through;
+}
+
+button {
+    height: 3rem;
+    width: 100%;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: .8rem;
+    font-weight: 700;
+   
+}
+
+button > i{
+    padding-right: 10px;
+}
+
+button:hover{
+    background-color:hsl(158, 45%, 20%);
+}
